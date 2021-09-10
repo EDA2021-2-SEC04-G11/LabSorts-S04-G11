@@ -25,9 +25,6 @@ import sys
 import controller
 from DISClib.ADT import list as lt
 assert cf
-...
-default_limit = 1000 
-sys.setrecursionlimit(default_limit*10)
 
 default_limit = 1000
 sys.setrecursionlimit(default_limit*10)
@@ -135,7 +132,6 @@ while True:
         print('Se encontraron: ', book_count, ' Libros')
 
     elif int(inputs[0]) == 5:
-        # TODO completar modificaciones para el laboratorio 4
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ",
