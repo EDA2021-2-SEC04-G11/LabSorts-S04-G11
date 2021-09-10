@@ -84,10 +84,6 @@ def printBestBooks(books):
 
 
 def printSortResults(ord_books, sample=10):
-    # TODO completar modificaciones para el laboratorio 4
-    pass
-
-def printSortResults(ord_books, sample=10):
     size = lt.size(ord_books)
     if size > sample:
         print("Los primeros ", sample, " libros ordenados son:")
