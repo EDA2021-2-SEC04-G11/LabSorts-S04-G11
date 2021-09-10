@@ -188,7 +188,6 @@ def compareauthors(authorname1, author):
 
 
 def compareratings(book1, book2):
-    # TODO completar modificaciones para el laboratorio 4
     return (float(book1['average_rating']) < float(book2['average_rating']))
 
 
@@ -202,7 +201,6 @@ def comparetagnames(name, tag):
 # Funciones de ordenamiento
 
 def sortBooks(catalog, size):
-    # TODO completar modificaciones para el laboratorio 4
     sub_list = lt.subList(catalog['books'], 1, size)
     sub_list = sub_list.copy()
     start_time = time.process_time()

@@ -82,11 +82,6 @@ def printBestBooks(books):
     else:
         print('No se encontraron libros')
 
-
-def printSortResults(ord_books, sample=10):
-    # TODO completar modificaciones para el laboratorio 4
-    pass
-
 def printSortResults(ord_books, sample=10):
     size = lt.size(ord_books)
     if size > sample:
