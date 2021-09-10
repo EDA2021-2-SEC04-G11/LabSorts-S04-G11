@@ -25,6 +25,9 @@ import sys
 import controller
 from DISClib.ADT import list as lt
 assert cf
+...
+default_limit = 1000 
+sys.setrecursionlimit(default_limit*10)
 
 
 """
@@ -123,7 +126,8 @@ while True:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ",
-                                          str(result))
+                                          str(result[0]))
+        printSortResults(result[1])
 
     else:
         sys.exit(0)
